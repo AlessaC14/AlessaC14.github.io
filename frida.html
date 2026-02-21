@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frida — Field Journal</title>
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <style>
+    /* Frida-specific overrides — slightly warmer, more playful */
+    .frida-specimen-label {
+      display: inline-block;
+      font-family: var(--font-head);
+      font-size: 0.68rem;
+      font-variant: small-caps;
+      letter-spacing: 0.14em;
+      color: var(--paper);
+      background: var(--accent);
+      padding: 0.15rem 0.55rem;
+      margin-bottom: 1.4rem;
+    }
+    .frida-note {
+      font-family: var(--font-head);
+      font-size: 0.80rem;
+      font-style: italic;
+      color: var(--muted-ink);
+      margin-top: 2.5rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid var(--faint-ink);
+      max-width: 420px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- No main nav — this is the hidden page -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-home">← Back to the journal</a>
+  </div>
+</nav>
+
+<main id="main" class="page-main">
+  <div class="container">
+
+    <div class="nb-grid" style="align-items:start">
+      <div class="nb-main">
+
+        <!-- Header -->
+        <header class="frida-header fade-in">
+          <div class="frida-specimen-label">Specimen No. ∞</div>
+          <h1 class="frida-name">Frida Carbo</h1>
+          <p class="frida-post">Chief Biscuit Officer &middot; Senior Research Dog</p>
+
+          <p class="frida-bio">
+            Frida is a terrier-ish creature of indeterminate genealogy and
+            maximum personality. She joined the lab in 2019 and has since
+            contributed meaningfully to couch science, deadline management
+            (by sitting on the laptop), and the development of treat-optimization
+            heuristics. Her methodologies remain, at this time, proprietary.
+          </p>
+        </header>
+
+        <!-- Divider -->
+        <div class="flourish fade-in" aria-hidden="true">
+          <svg viewBox="0 0 200 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <line x1="0"   y1="12" x2="84"  y2="12" stroke-width="0.8"/>
+            <path d="M 92 4 L 100 12 L 92 20 L 84 12 Z" stroke-width="0.9"/>
+            <circle cx="108" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+            <line x1="116" y1="12" x2="200" y2="12" stroke-width="0.8"/>
+          </svg>
+        </div>
+
+        <!-- Research Interests -->
+        <section aria-labelledby="ri-heading" class="fade-in">
+          <div class="section-head">
+            <span class="label">Declared Interests</span>
+            <h2 id="ri-heading">Research Programme</h2>
+          </div>
+
+          <ul class="frida-interests">
+
+            <li class="frida-interest">
+              <span class="interest-num">i.</span>
+              <div>
+                <span class="interest-title">Bayesian Sniffing</span>
+                <span class="interest-desc">
+                  Sequential inference over scent-space: updating posterior beliefs
+                  about who has been in the park with each new olfactory observation.
+                  Evidence accumulation is real-time and continuous.
+                </span>
+              </div>
+            </li>
+
+            <li class="frida-interest">
+              <span class="interest-num">ii.</span>
+              <div>
+                <span class="interest-title">Reinforcement Learning for Treat Optimization</span>
+                <span class="interest-desc">
+                  Multi-armed bandit formulation of the "look cute until snack appears"
+                  problem. Current policy achieves near-optimal reward rate. Exploration
+                  strategy: tilting head at 42°.
+                </span>
+              </div>
+            </li>
+
+            <li class="frida-interest">
+              <span class="interest-num">iii.</span>
+              <div>
+                <span class="interest-title">Topological Data Analysis of the Sofa</span>
+                <span class="interest-desc">
+                  Persistent homology of optimal nap positions. Primary finding:
+                  the warmest location is always the one currently occupied by
+                  a human, suggesting adversarial dynamics.
+                </span>
+              </div>
+            </li>
+
+            <li class="frida-interest">
+              <span class="interest-num">iv.</span>
+              <div>
+                <span class="interest-title">Causal Inference: Squirrel Attribution</span>
+                <span class="interest-desc">
+                  Does the sound of a squirrel cause barking, or merely correlate?
+                  Years of observational data suggest causality, but confounders
+                  (birds, leaves, wind) remain uncontrolled.
+                </span>
+              </div>
+            </li>
+
+            <li class="frida-interest">
+              <span class="interest-num">v.</span>
+              <div>
+                <span class="interest-title">Walk Duration Forecasting</span>
+                <span class="interest-desc">
+                  Time-series model for predicting walk length from coat, leash,
+                  and weather signals. Current RMSE: 4.3 minutes. Primary failure
+                  mode: underestimating Sunday-morning long walks.
+                </span>
+              </div>
+            </li>
+
+            <li class="frida-interest">
+              <span class="interest-num">vi.</span>
+              <div>
+                <span class="interest-title">Human Emotion Classification</span>
+                <span class="interest-desc">
+                  Zero-shot classification of human affective states from
+                  micro-expressions, gait, and tone of voice. Achieves 94%
+                  accuracy on "about to give a treat" vs. "not about to give
+                  a treat" — the only classes that matter.
+                </span>
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="frida-note">
+            Frida does not maintain a Substack. She has, however, been observed
+            staring meaningfully at a blank notebook for extended periods,
+            which the lab interprets as a sign of methodological rigor.
+          </p>
+        </section>
+
+      </div><!-- /.nb-main -->
+
+      <!-- Rat illustration reused in aside for whimsy -->
+      <div class="nb-aside" aria-hidden="true">
+        <div class="illus" style="margin-top:6rem; transform:scaleX(-1);">
+          <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" fill="none"
+               stroke="currentColor" role="img" aria-label="Decorative engraving of a small terrier dog">
+            <!-- body -->
+            <ellipse cx="100" cy="105" rx="70" ry="44"/>
+            <!-- head -->
+            <circle cx="162" cy="82" r="28"/>
+            <!-- floppy ear -->
+            <path d="M 152 58 Q 138 45 130 60 Q 128 75 148 78" stroke-width="1.5"/>
+            <path d="M 172 57 Q 174 44 180 50 Q 185 60 178 70" stroke-width="1.5"/>
+            <!-- eye -->
+            <circle cx="170" cy="78" r="4.5" fill="currentColor" stroke="none"/>
+            <circle cx="171.5" cy="76.5" r="1.6" fill="#f5f1e6" stroke="none"/>
+            <!-- nose (round dog nose) -->
+            <ellipse cx="183" cy="88" rx="4" ry="3.2" fill="currentColor" stroke="none"/>
+            <line x1="183" y1="88" x2="183" y2="94" stroke="currentColor" stroke-width="1.2"/>
+            <!-- mouth smile -->
+            <path d="M 178 94 Q 183 98 188 94" stroke-width="1.2" fill="none"/>
+            <!-- tongue -->
+            <path d="M 181 98 Q 183 105 185 98" stroke-width="1" fill="none"/>
+            <!-- whisker dots -->
+            <circle cx="175" cy="90" r="1.2" fill="currentColor" stroke="none"/>
+            <circle cx="175" cy="86" r="1.2" fill="currentColor" stroke="none"/>
+            <circle cx="192" cy="90" r="1.2" fill="currentColor" stroke="none"/>
+            <circle cx="192" cy="86" r="1.2" fill="currentColor" stroke="none"/>
+            <!-- tail (wagging, curved up) -->
+            <path d="M 32 98 Q 14 86 10 70 Q 12 62 20 68" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- front legs -->
+            <path d="M 138 144 L 135 158" stroke-width="5" stroke-linecap="round"/>
+            <path d="M 155 147 L 154 160" stroke-width="4.5" stroke-linecap="round"/>
+            <!-- back legs -->
+            <path d="M 62 145 L 57 158" stroke-width="6" stroke-linecap="round"/>
+            <path d="M 80 148 L 78 160" stroke-width="5" stroke-linecap="round"/>
+            <!-- paws (toes) -->
+            <path d="M 48 158 L 44 162 M 57 159 L 56 163 M 65 158 L 68 162" stroke-width="1"/>
+            <path d="M 127 158 L 122 162 M 135 159 L 134 163 M 142 158 L 146 162" stroke-width="1"/>
+            <!-- fur texture on body -->
+            <g stroke-width="0.5" opacity="0.25">
+              <path d="M 55 80 Q 58 75 62 80"/>
+              <path d="M 68 76 Q 71 71 75 76"/>
+              <path d="M 82 73 Q 85 68 89 73"/>
+              <path d="M 96 72 Q 99 67 103 72"/>
+              <path d="M 110 73 Q 113 68 117 73"/>
+              <path d="M 124 77 Q 127 72 131 77"/>
+              <path d="M 136 83 Q 139 78 143 83"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+    </div><!-- /.nb-grid -->
+
+  </div><!-- /.container -->
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">
+      &copy; 2025 Alessa Carbo &mdash; <span style="font-style:italic">Woof.</span>
+    </span>
+    <div class="footer-right">
+      <a href="index.html" style="font-family:var(--font-head);font-size:0.78rem;font-variant:small-caps;letter-spacing:0.09em;color:var(--muted-ink);">
+        Return to journal
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternative Proteins — Alessa Carbo</title>
+  <meta name="description" content="Alessa Carbo's work in alternative protein research, including computational approaches to novel food systems.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-home">Alessa Carbo</a>
+    <ul class="nav-links" role="list">
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="talks.html">Talks</a></li>
+      <li><a href="alt-proteins.html">Alt&nbsp;Proteins</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="main" class="page-main">
+  <div class="container">
+
+    <div class="nb-grid" style="align-items:start">
+      <div class="nb-main">
+
+        <header class="page-title">
+          <span class="label">Applied Research</span>
+          <h1>Alternative Proteins</h1>
+        </header>
+
+        <div class="intro-text fade-in">
+          <p>
+            The global food system is among the largest contributors to greenhouse
+            gas emissions, land use, and biodiversity loss. Alternative proteins —
+            plant-based, fermentation-derived, and cultivated — offer a path toward
+            diets that are nutritionally adequate and ecologically tractable.
+          </p>
+          <p>
+            I work at the intersection of machine learning and protein science to
+            accelerate discovery and reduce the trial-and-error burden in this space.
+            That means Bayesian active learning for high-throughput screening, foundation
+            models fine-tuned on non-model organisms, and multi-modal pipelines that
+            integrate genomic, proteomic, and supply-chain data.
+          </p>
+          <p>
+            I also care about the policy and communication layer: making sure that
+            good science reaches decision-makers and the public without being distorted
+            by hype in either direction. I advise the
+            <a href="https://gfi.org" target="_blank" rel="noopener">Good Food Institute</a>
+            on computational biology strategy, and contribute to open benchmarks
+            for the field.
+          </p>
+        </div>
+
+        <!-- Divider -->
+        <div class="flourish fade-in" aria-hidden="true" style="margin:0 0 2.5rem">
+          <svg viewBox="0 0 120 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+            <line x1="0" y1="6" x2="50" y2="6" stroke-width="0.7"/>
+            <circle cx="60" cy="6" r="3" fill="currentColor" stroke="none"/>
+            <line x1="70" y1="6" x2="120" y2="6" stroke-width="0.7"/>
+          </svg>
+        </div>
+
+        <!-- Projects -->
+        <section aria-labelledby="projects-heading">
+          <div class="section-head">
+            <span class="label">Projects &amp; Roles</span>
+            <h2 id="projects-heading">Selected Work</h2>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item fade-in">
+              <div class="project-dot" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-name">ProteinFind: Open Benchmark for Alt-Protein Discovery</h3>
+                <p class="project-desc">
+                  An open benchmark suite pairing sequence databases from fungal, insect, and
+                  legume sources with standardized evaluations for foundation models.
+                  Designed to lower the entry barrier for ML researchers new to food science.
+                </p>
+                <p class="project-links">
+                  <a href="#">GitHub</a>
+                  <a href="#">Paper</a>
+                  <a href="#">Dataset</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project-item fade-in">
+              <div class="project-dot" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-name">Bayesian Active Screening for Mycoprotein Candidates</h3>
+                <p class="project-desc">
+                  In collaboration with a UK food-tech startup, applied Bayesian active
+                  learning to reduce wet-lab iteration cycles by ~40% in a screen
+                  for high-yield fungal biomass candidates.
+                </p>
+                <p class="project-links">
+                  <a href="#">Paper (Cell Systems 2023)</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project-item fade-in">
+              <div class="project-dot" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-name">Multi-Modal Farm-to-Fork Modeling</h3>
+                <p class="project-desc">
+                  Joint model over satellite imagery, supply-chain records, and fermentation
+                  sensor streams to predict protein conversion efficiency at farm scale.
+                  Published at ICLR 2025; code and data publicly available.
+                </p>
+                <p class="project-links">
+                  <a href="#">Paper</a>
+                  <a href="#">Code</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project-item fade-in">
+              <div class="project-dot" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-name">GFI Scientific Advisory — Computational Biology</h3>
+                <p class="project-desc">
+                  Ongoing advisory role to the Good Food Institute's science team on
+                  ML/AI strategy for alternative protein R&amp;D. Contributed to the
+                  2024 <em>State of the Science</em> report's computational biology section.
+                </p>
+                <p class="project-links">
+                  <a href="https://gfi.org" target="_blank" rel="noopener">GFI Website</a>
+                </p>
+              </div>
+            </li>
+
+            <li class="project-item fade-in">
+              <div class="project-dot" aria-hidden="true"></div>
+              <div class="project-body">
+                <h3 class="project-name">Protein Language Models for Non-Model Organisms</h3>
+                <p class="project-desc">
+                  Survey and fine-tuning study of ESM-2 and related architectures on
+                  insect and molluscan proteomes — organisms underrepresented in
+                  standard training corpora. Includes a benchmark and pre-trained
+                  checkpoints for public use.
+                </p>
+                <p class="project-links">
+                  <a href="#">arXiv</a>
+                  <a href="#">Model weights</a>
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </div><!-- /.nb-main -->
+
+      <!-- Dinosaur illustration in aside -->
+      <div class="nb-aside" aria-hidden="true">
+        <div class="illus" style="margin-top:10rem">
+          <svg viewBox="0 0 280 230" xmlns="http://www.w3.org/2000/svg" fill="none"
+               stroke="currentColor" role="img" aria-label="Decorative engraving of a sauropod dinosaur">
+            <!-- tail -->
+            <path d="M 42 152 Q 22 158 12 170 Q 5 180 10 178" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- body -->
+            <ellipse cx="118" cy="156" rx="78" ry="52"/>
+            <!-- body hatching -->
+            <g stroke-width="0.55" opacity="0.25">
+              <line x1="55"  y1="115" x2="43"  y2="160"/>
+              <line x1="73"  y1="107" x2="60"  y2="163"/>
+              <line x1="92"  y1="103" x2="79"  y2="167"/>
+              <line x1="112" y1="102" x2="99"  y2="168"/>
+              <line x1="131" y1="103" x2="120" y2="168"/>
+              <line x1="149" y1="107" x2="140" y2="167"/>
+              <line x1="165" y1="114" x2="158" y2="165"/>
+              <line x1="180" y1="124" x2="175" y2="162"/>
+            </g>
+            <!-- neck (thick stroke for volume) -->
+            <path d="M 180 118 Q 200 95 218 68 Q 232 46 238 28"
+                  stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- neck outline (lighter) -->
+            <path d="M 192 124 Q 212 100 228 72 Q 240 48 244 28" stroke-width="1.2" opacity="0.4"/>
+            <path d="M 170 114 Q 190 91 208 65 Q 222 44 228 28" stroke-width="1.2" opacity="0.4"/>
+            <!-- head -->
+            <path d="M 225 26 Q 246 16 264 20 Q 272 27 264 34 Q 254 38 240 36 Q 228 36 225 30 Z"/>
+            <!-- eye -->
+            <circle cx="237" cy="24" r="3.2" fill="currentColor" stroke="none"/>
+            <circle cx="238" cy="23" r="1.1" fill="#f5f1e6" stroke="none"/>
+            <!-- nostril -->
+            <circle cx="260" cy="20" r="2" fill="currentColor" stroke="none"/>
+            <!-- front legs -->
+            <path d="M 158 205 L 155 222" stroke-width="13" stroke-linecap="round"/>
+            <path d="M 178 207 L 177 224" stroke-width="11" stroke-linecap="round"/>
+            <!-- back legs -->
+            <path d="M 80 205 L 76 222" stroke-width="15" stroke-linecap="round"/>
+            <path d="M 100 207 L 100 224" stroke-width="13" stroke-linecap="round"/>
+            <!-- toenails (tiny lines) -->
+            <path d="M 69 222 L 63 226 M 76 223 L 74 228 M 83 222 L 88 226" stroke-width="1.2"/>
+            <path d="M 148 222 L 142 226 M 155 223 L 153 228 M 162 222 L 167 226" stroke-width="1.2"/>
+          </svg>
+        </div>
+      </div>
+    </div><!-- /.nb-grid -->
+
+  </div><!-- /.container -->
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">&copy; 2025 Alessa Carbo</span>
+    <div class="footer-right">
+      <span class="footer-kermit" aria-label="It's not easy being green">
+        It's not easy being
+        <span class="green-word" role="button" tabindex="0"
+              aria-haspopup="dialog" aria-label="green — click for a note">green</span>.
+      </span>
+      <a href="frida.html" class="paw-link" aria-label="Meet Frida">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+          <ellipse cx="8"  cy="11.5" rx="3.2" ry="4.6" transform="rotate(-18 8 11.5)"/>
+          <ellipse cx="14" cy="8.5"  rx="3.2" ry="4.6" transform="rotate(-5 14 8.5)"/>
+          <ellipse cx="20" cy="8.5"  rx="3.2" ry="4.6" transform="rotate(5 20 8.5)"/>
+          <ellipse cx="26" cy="11.5" rx="3.2" ry="4.6" transform="rotate(18 26 11.5)"/>
+          <path d="M17 17 C11.5 17 8 20.5 8 23.5 C8 27 11.5 30 17 30 C22.5 30 26 27 26 23.5 C26 20.5 22.5 17 17 17Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div id="kermit-modal" class="modal-backdrop" role="dialog" aria-modal="true"
+     aria-labelledby="kermit-title" aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <blockquote id="kermit-title">
+      "It's not that easy being green,<br>
+      having to spend each day the color of the leaves."
+    </blockquote>
+    <p class="modal-attr">— Kermit the Frog, 1970</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

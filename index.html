@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alessa Carbo — Field Journal of Artificial Systems</title>
+  <meta name="description" content="Personal academic website of Alessa Carbo — researcher in machine learning, uncertainty quantification, and alternative protein systems.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+
+<!-- ── Navigation ────────────────────────────────────────── -->
+<nav class="site-nav" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-home">Alessa Carbo</a>
+    <ul class="nav-links" role="list">
+      <li><a href="publications.html">Publications</a></li>
+      <li><a href="talks.html">Talks</a></li>
+      <li><a href="alt-proteins.html">Alt&nbsp;Proteins</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ── Hero ──────────────────────────────────────────────── -->
+<header class="hero">
+  <div class="container">
+    <div class="nb-grid">
+      <div class="nb-main">
+        <p class="hero-subtitle" aria-label="Subtitle">Field Journal of Artificial Systems</p>
+        <h1 class="hero-name">Alessa Carbo</h1>
+
+        <p class="hero-bio">
+          I study how machines learn under uncertainty — from Bayesian inference in
+          large language models to probabilistic methods for food-system modeling.
+          My work sits at the intersection of ML research and its application to
+          problems that matter: alternative proteins, scientific communication,
+          and honest AI. Based somewhere between a terminal and a field notebook.
+        </p>
+
+        <nav class="links-row" aria-label="External profiles">
+          <a href="mailto:alessa@example.com">Email</a>
+          <a href="cv.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://substack.com/" target="_blank" rel="noopener">Substack</a>
+        </nav>
+      </div>
+
+      <div class="nb-aside" aria-hidden="true">
+        <!-- Rat illustration — decorative -->
+        <div class="illus nb-illus-rat" style="margin-top:2rem">
+          <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" fill="none"
+               stroke="currentColor" role="img" aria-label="Decorative engraving of a rat">
+            <!-- tail -->
+            <path d="M 38 110 Q 15 118 8 134 Q 3 146 10 143" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- body -->
+            <ellipse cx="100" cy="96" rx="64" ry="40"/>
+            <!-- head -->
+            <circle cx="157" cy="75" r="25"/>
+            <!-- ear -->
+            <ellipse cx="149" cy="53" rx="12" ry="15" transform="rotate(-8 149 53)"/>
+            <ellipse cx="149" cy="55" rx="6.5" ry="9" stroke-width="0.7" opacity="0.55" transform="rotate(-8 149 55)"/>
+            <!-- eye -->
+            <circle cx="165" cy="71" r="3.8" fill="currentColor" stroke="none"/>
+            <circle cx="166.5" cy="69.5" r="1.2" fill="#f5f1e6" stroke="none"/>
+            <!-- nose -->
+            <ellipse cx="180" cy="78" rx="2.5" ry="2" fill="currentColor" stroke="none"/>
+            <!-- whiskers -->
+            <line x1="182" y1="76" x2="202" y2="69" stroke-width="0.8"/>
+            <line x1="182" y1="78" x2="204" y2="78" stroke-width="0.8"/>
+            <line x1="182" y1="80" x2="202" y2="87" stroke-width="0.8"/>
+            <line x1="182" y1="75" x2="199" y2="66" stroke-width="0.55" opacity="0.6"/>
+            <!-- back legs -->
+            <path d="M 58 132 Q 53 144 48 150" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M 76 134 Q 73 145 70 150" stroke-width="2.8" stroke-linecap="round"/>
+            <!-- front legs -->
+            <path d="M 128 130 Q 125 142 121 148" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M 147 132 Q 146 143 143 148" stroke-width="2.8" stroke-linecap="round"/>
+            <!-- body hatching -->
+            <g stroke-width="0.55" opacity="0.28">
+              <line x1="70"  y1="68" x2="57"  y2="105"/>
+              <line x1="85"  y1="62" x2="72"  y2="104"/>
+              <line x1="100" y1="59" x2="87"  y2="105"/>
+              <line x1="115" y1="60" x2="103" y2="107"/>
+              <line x1="130" y1="63" x2="120" y2="106"/>
+              <line x1="143" y1="69" x2="135" y2="104"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ── Flourish ───────────────────────────────────────────── -->
+<div class="container" aria-hidden="true">
+  <div class="flourish">
+    <svg viewBox="0 0 240 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+      <line x1="0"   y1="12" x2="98"  y2="12" stroke-width="0.8"/>
+      <circle cx="104" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+      <path d="M 112 4 L 120 12 L 112 20 L 104 12 Z" stroke-width="0.9"/>
+      <circle cx="128" cy="12" r="2.5" fill="currentColor" stroke="none"/>
+      <line x1="134" y1="12" x2="240" y2="12" stroke-width="0.8"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ── Main ───────────────────────────────────────────────── -->
+<main id="main" class="page-main">
+  <div class="container">
+
+    <!-- Selected Specimens -->
+    <section aria-labelledby="specimens-heading">
+      <div class="section-head">
+        <span class="label">Selected Specimens</span>
+        <h2 id="specimens-heading">Representative Work</h2>
+      </div>
+
+      <div class="specimens">
+
+        <!-- Specimen i -->
+        <article class="specimen fade-in">
+          <h3 class="specimen-title">
+            <a href="publications.html#bayesian-llm">
+              Calibrated Uncertainty in Large Language Models: A Bayesian Perspective
+            </a>
+          </h3>
+          <p class="specimen-meta">
+            A. Carbo, M. Ferreira, R. Osei &middot; <em>NeurIPS 2024</em>
+          </p>
+          <p class="specimen-desc">
+            We show that standard fine-tuning systematically destroys calibration, and propose
+            a lightweight posterior-approximation scheme that recovers it without retraining.
+          </p>
+          <p class="specimen-links">
+            <a href="#">Paper</a>
+            <a href="#">Code</a>
+          </p>
+        </article>
+
+        <!-- Specimen ii -->
+        <article class="specimen fade-in">
+          <h3 class="specimen-title">
+            <a href="publications.html#protein-fm">
+              Foundation Models for Alternative Protein Discovery
+            </a>
+          </h3>
+          <p class="specimen-meta">
+            A. Carbo, L. Nakamura &middot; <em>Nature Machine Intelligence, 2024</em>
+          </p>
+          <p class="specimen-desc">
+            A survey of sequence-to-function models applied to mycoprotein and insect-protein
+            candidate screening, with an open benchmark suite.
+          </p>
+          <p class="specimen-links">
+            <a href="#">Paper</a>
+            <a href="#">Benchmark</a>
+          </p>
+        </article>
+
+        <!-- Specimen iii -->
+        <article class="specimen fade-in">
+          <h3 class="specimen-title">
+            <a href="publications.html#multimodal-food">
+              Multi-Modal Learning for Food System Modeling
+            </a>
+          </h3>
+          <p class="specimen-meta">
+            A. Carbo, T. Adeyemi, P. Liu &middot; <em>ICLR 2025</em>
+          </p>
+          <p class="specimen-desc">
+            Joint learning from satellite imagery, supply-chain records, and sensor data
+            to predict protein-conversion efficiency at farm scale.
+          </p>
+          <p class="specimen-links">
+            <a href="#">Paper</a>
+            <a href="#">Code</a>
+            <a href="#">Poster</a>
+          </p>
+        </article>
+
+        <!-- Specimen iv — lighter weight -->
+        <article class="specimen fade-in">
+          <h3 class="specimen-title">
+            <a href="publications.html#workshop-ood">
+              Out-of-Distribution Detection via Density Ratio Estimation
+            </a>
+          </h3>
+          <p class="specimen-meta">
+            A. Carbo &middot; <em>ICML 2024 Workshop on Uncertainty in Deep Learning</em>
+          </p>
+          <p class="specimen-desc">
+            Short paper proposing an efficient score function combining likelihood ratios
+            with semantic embedding distance.
+          </p>
+          <p class="specimen-links">
+            <a href="#">Paper</a>
+          </p>
+        </article>
+
+      </div><!-- /.specimens -->
+
+      <p style="font-family:var(--font-head);font-size:0.82rem;font-variant:small-caps;letter-spacing:0.08em;">
+        <a href="publications.html" style="color:var(--ink);border-bottom:1px solid var(--faint-ink)">
+          Full publication list &rarr;
+        </a>
+      </p>
+    </section>
+
+    <!-- Divider -->
+    <div class="flourish" aria-hidden="true" style="margin:3rem 0 2.5rem">
+      <svg viewBox="0 0 120 12" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor">
+        <line x1="0" y1="6" x2="50" y2="6" stroke-width="0.7"/>
+        <circle cx="60" cy="6" r="3" fill="currentColor" stroke="none"/>
+        <line x1="70" y1="6" x2="120" y2="6" stroke-width="0.7"/>
+      </svg>
+    </div>
+
+    <!-- Field Notes -->
+    <section aria-labelledby="fieldnotes-heading" class="fade-in">
+      <div class="section-head">
+        <span class="label">Field Notes</span>
+        <h2 id="fieldnotes-heading">Writing</h2>
+      </div>
+      <div class="field-notes">
+        <p>
+          Occasional dispatches on machine learning, alternative proteins, and the
+          practice of doing science honestly. No hype, no listicles — just notes
+          from the field.
+        </p>
+        <a class="substack-link" href="https://substack.com/" target="_blank" rel="noopener">
+          Read on Substack &rarr;
+        </a>
+      </div>
+    </section>
+
+  </div><!-- /.container -->
+</main>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="footer-copy">
+      &copy; 2025 Alessa Carbo
+    </span>
+    <div class="footer-right">
+      <span class="footer-kermit" aria-label="It's not easy being green">
+        It's not easy being
+        <span class="green-word"
+              role="button"
+              tabindex="0"
+              aria-haspopup="dialog"
+              aria-label="green — click for a note">green</span>.
+      </span>
+      <a href="frida.html" class="paw-link" aria-label="Meet Frida">
+        <!-- Paw icon -->
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true">
+          <ellipse cx="8"  cy="11.5" rx="3.2" ry="4.6" transform="rotate(-18 8 11.5)"/>
+          <ellipse cx="14" cy="8.5"  rx="3.2" ry="4.6" transform="rotate(-5 14 8.5)"/>
+          <ellipse cx="20" cy="8.5"  rx="3.2" ry="4.6" transform="rotate(5 20 8.5)"/>
+          <ellipse cx="26" cy="11.5" rx="3.2" ry="4.6" transform="rotate(18 26 11.5)"/>
+          <path d="M17 17 C11.5 17 8 20.5 8 23.5 C8 27 11.5 30 17 30 C22.5 30 26 27 26 23.5 C26 20.5 22.5 17 17 17Z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Kermit Modal ───────────────────────────────────────── -->
+<div id="kermit-modal"
+     class="modal-backdrop"
+     role="dialog"
+     aria-modal="true"
+     aria-labelledby="kermit-title"
+     aria-hidden="true">
+  <div class="modal-box">
+    <button class="modal-close" aria-label="Close">&times;</button>
+    <blockquote id="kermit-title">
+      "It's not that easy being green,<br>
+      having to spend each day the color of the leaves."
+    </blockquote>
+    <p class="modal-attr">— Kermit the Frog, 1970</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
