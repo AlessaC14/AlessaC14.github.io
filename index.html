@@ -48,48 +48,7 @@
         </nav>
       </div>
 
-      <div class="nb-aside" aria-hidden="true">
-        <!-- Rat illustration — decorative -->
-        <div class="illus nb-illus-rat" style="margin-top:2rem">
-          <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" fill="none"
-               stroke="currentColor" role="img" aria-label="Decorative engraving of a rat">
-            <!-- tail -->
-            <path d="M 38 110 Q 15 118 8 134 Q 3 146 10 143" stroke-width="2.2" stroke-linecap="round"/>
-            <!-- body -->
-            <ellipse cx="100" cy="96" rx="64" ry="40"/>
-            <!-- head -->
-            <circle cx="157" cy="75" r="25"/>
-            <!-- ear -->
-            <ellipse cx="149" cy="53" rx="12" ry="15" transform="rotate(-8 149 53)"/>
-            <ellipse cx="149" cy="55" rx="6.5" ry="9" stroke-width="0.7" opacity="0.55" transform="rotate(-8 149 55)"/>
-            <!-- eye -->
-            <circle cx="165" cy="71" r="3.8" fill="currentColor" stroke="none"/>
-            <circle cx="166.5" cy="69.5" r="1.2" fill="#f5f1e6" stroke="none"/>
-            <!-- nose -->
-            <ellipse cx="180" cy="78" rx="2.5" ry="2" fill="currentColor" stroke="none"/>
-            <!-- whiskers -->
-            <line x1="182" y1="76" x2="202" y2="69" stroke-width="0.8"/>
-            <line x1="182" y1="78" x2="204" y2="78" stroke-width="0.8"/>
-            <line x1="182" y1="80" x2="202" y2="87" stroke-width="0.8"/>
-            <line x1="182" y1="75" x2="199" y2="66" stroke-width="0.55" opacity="0.6"/>
-            <!-- back legs -->
-            <path d="M 58 132 Q 53 144 48 150" stroke-width="2.8" stroke-linecap="round"/>
-            <path d="M 76 134 Q 73 145 70 150" stroke-width="2.8" stroke-linecap="round"/>
-            <!-- front legs -->
-            <path d="M 128 130 Q 125 142 121 148" stroke-width="2.8" stroke-linecap="round"/>
-            <path d="M 147 132 Q 146 143 143 148" stroke-width="2.8" stroke-linecap="round"/>
-            <!-- body hatching -->
-            <g stroke-width="0.55" opacity="0.28">
-              <line x1="70"  y1="68" x2="57"  y2="105"/>
-              <line x1="85"  y1="62" x2="72"  y2="104"/>
-              <line x1="100" y1="59" x2="87"  y2="105"/>
-              <line x1="115" y1="60" x2="103" y2="107"/>
-              <line x1="130" y1="63" x2="120" y2="106"/>
-              <line x1="143" y1="69" x2="135" y2="104"/>
-            </g>
-          </svg>
-        </div>
-      </div>
+      <div class="nb-aside" aria-hidden="true"></div>
     </div>
   </div>
 </header>
@@ -110,6 +69,8 @@
 <!-- ── Main ───────────────────────────────────────────────── -->
 <main id="main" class="page-main">
   <div class="container">
+  <div class="sheet nb-grid" style="align-items:start">
+  <div class="nb-main">
 
     <!-- Selected Specimens -->
     <section aria-labelledby="specimens-heading">
@@ -213,6 +174,50 @@
       </div>
     </section>
 
+  </div><!-- /.nb-main -->
+
+  <aside class="nb-aside" aria-label="Marginalia">
+    <div class="marginal-tag">Filed under</div>
+    <p class="marginal-note">Sign language processing · Mechanistic interpretability · Alternative proteins</p>
+
+    <div class="marginal-tag">Localities</div>
+    <p class="marginal-note">Baltimore &middot; Brno</p>
+
+    <div class="marginal-tag">Advisor</div>
+    <p class="marginal-note">E. Nalisnick</p>
+
+    <!-- Rat illustration -->
+    <div class="illus" style="margin-top:1rem">
+      <svg viewBox="0 0 220 160" xmlns="http://www.w3.org/2000/svg" fill="none"
+           stroke="currentColor" role="img" aria-label="Decorative engraving of a rat">
+        <path d="M 38 110 Q 15 118 8 134 Q 3 146 10 143" stroke-width="2.2" stroke-linecap="round"/>
+        <ellipse cx="100" cy="96" rx="64" ry="40"/>
+        <circle cx="157" cy="75" r="25"/>
+        <ellipse cx="149" cy="53" rx="12" ry="15" transform="rotate(-8 149 53)"/>
+        <ellipse cx="149" cy="55" rx="6.5" ry="9" stroke-width="0.7" opacity="0.55" transform="rotate(-8 149 55)"/>
+        <circle cx="165" cy="71" r="3.8" fill="currentColor" stroke="none"/>
+        <circle cx="166.5" cy="69.5" r="1.2" fill="#f5f1e6" stroke="none"/>
+        <ellipse cx="180" cy="78" rx="2.5" ry="2" fill="currentColor" stroke="none"/>
+        <line x1="182" y1="76" x2="202" y2="69" stroke-width="0.8"/>
+        <line x1="182" y1="78" x2="204" y2="78" stroke-width="0.8"/>
+        <line x1="182" y1="80" x2="202" y2="87" stroke-width="0.8"/>
+        <path d="M 58 132 Q 53 144 48 150" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M 76 134 Q 73 145 70 150" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M 128 130 Q 125 142 121 148" stroke-width="2.8" stroke-linecap="round"/>
+        <path d="M 147 132 Q 146 143 143 148" stroke-width="2.8" stroke-linecap="round"/>
+        <g stroke-width="0.55" opacity="0.28">
+          <line x1="70"  y1="68" x2="57"  y2="105"/>
+          <line x1="85"  y1="62" x2="72"  y2="104"/>
+          <line x1="100" y1="59" x2="87"  y2="105"/>
+          <line x1="115" y1="60" x2="103" y2="107"/>
+          <line x1="130" y1="63" x2="120" y2="106"/>
+          <line x1="143" y1="69" x2="135" y2="104"/>
+        </g>
+      </svg>
+    </div>
+  </aside>
+
+  </div><!-- /.sheet.nb-grid -->
   </div><!-- /.container -->
 </main>
 

@@ -152,7 +152,8 @@ a:focus-visible {
 
 @media (min-width: 860px) {
   .nb-grid {
-    grid-template-columns: 1fr 180px;
+    grid-template-columns: 1fr 220px;
+    column-gap: 2.6rem;
   }
 }
 
@@ -160,7 +161,78 @@ a:focus-visible {
 .nb-aside { display: none; }
 
 @media (min-width: 860px) {
-  .nb-aside { display: block; }
+  .nb-aside {
+    display: block;
+    padding-left: 1.2rem;
+    border-left: 1px solid rgba(122, 75, 42, 0.22);
+  }
+}
+
+/* ── Notebook sheet ──────────────────────────────────────── */
+.sheet {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid rgba(46,38,32,0.10);
+  border-radius: 6px;
+  padding: clamp(1.4rem, 3vw, 2.4rem);
+  box-shadow:
+    0 18px 45px rgba(46,38,32,0.09),
+    0 2px  0   rgba(46,38,32,0.06);
+  overflow: hidden;
+}
+
+/* paper grain */
+.sheet::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(46,38,32,0.05), transparent 55%),
+    radial-gradient(circle at 80% 25%, rgba(46,38,32,0.04), transparent 60%),
+    radial-gradient(circle at 30% 80%, rgba(46,38,32,0.03), transparent 55%),
+    linear-gradient(to bottom, rgba(255,255,255,0.25), rgba(255,255,255,0.0));
+  pointer-events: none;
+}
+
+/* faint ruled lines */
+.sheet::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 26px,
+    rgba(46,38,32,0.032) 27px
+  );
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.nb-main, .nb-aside { position: relative; z-index: 1; }
+
+/* ── Marginal notes ──────────────────────────────────────── */
+.marginal-tag {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 0.65rem;
+  font-variant: small-caps;
+  letter-spacing: 0.12em;
+  color: rgba(46,38,32,0.60);
+  border: 1px solid rgba(46,38,32,0.15);
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  margin-bottom: 0.45rem;
+  background: rgba(255,255,255,0.20);
+}
+
+.marginal-note {
+  font-family: var(--font-head);
+  font-size: 0.84rem;
+  color: rgba(46,38,32,0.72);
+  font-style: italic;
+  line-height: 1.48;
+  margin-bottom: 1.5rem;
 }
 
 /* ── Hero ────────────────────────────────────────────────── */
@@ -236,10 +308,11 @@ a:focus-visible {
 
 /* ── Selected Specimens (homepage) ──────────────────────── */
 .specimen {
-  padding: 1.6rem 0;
-  border-top: 1px solid var(--faint-ink);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(46,38,32,0.10);
 }
 .specimen:first-child { border-top: none; padding-top: 0; }
+.specimen:nth-child(2n) { border-top-color: rgba(46,38,32,0.06); }
 
 /* first specimen gets extra visual weight */
 .specimen:first-child .specimen-title { font-size: 1.32rem; }
