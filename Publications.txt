@@ -1,0 +1,4 @@
+﻿PUBLICATIONS
+A Carbo and E. Nalisnick Which Sparse Code? Identifiability Failures in SAE Inference. ICLR 2026  Sci4DL workshop 
+V. Javorek, T. Železný, A. Carbo, M. Hrúz, I. Gruber. Beyond a Single Reference: Training and Evaluation with Paraphrases in Sign Language Translation.* Under review for ACL 206
+A. Carbo and E. Nalisnick. Improving Handshape Representations for Sign Language Processing: A Graph Neural Network Approach. In Proceedings of Empirical Methods in Natural Language Processing (EMNLP), Main Conference, 2025.
