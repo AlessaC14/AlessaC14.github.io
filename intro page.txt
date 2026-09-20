@@ -1,8 +1,6 @@
-﻿I’m a CS student at Johns Hopkins university. I research mechanistic interpretability, learning dynamics, and AI safety under the mentorship of Eric Nalisnick. My recent work focuses on the identifiability in interpretability methods such SAEs, and I’m also working on characterizing learning dynamics of “weird” and safety-relevant generalization phenomena such as Emergent Misalignment and Subliminal Learning through a Neural Tangent Kernel lens. 
+﻿I’m a CS student at Johns Hopkins university. My research focus is on AI safety, learning dynamics, and making models more tamper-resistant. At Hopkins, I'm mentored by Eric Nalisnick. My recent work focuses on the identifiability in interpretability methods such SAEs, and on characterizing knowledge destruction vs hiddenness in language models in an attempt to certify tamper-resistance.  
 
-
-This summer I’ll be a MATS fellow under the mentorship of Stephen Casper, where I’ll be working on more robust guarantees for tamper-resistant models. 
-
+I was a MATS 10.0 scholar mentored by Stephen Casper, where I worked on open-weight model safety. I'm currently doing the MATS extension in London. 
 
 Beyond ML, I'm deeply involved in the alternative protein space. I co-president the JHU Alternative Protein Project and lead and lecture for our 3-credit course on future food manufacturing. I’ve organized many relevant events and public conversations with people in the field such as GFI’s founder Bruce Friedrich, and an upcoming ML for food systems panel at the Food4Thought conference. 
 
